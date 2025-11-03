@@ -1,4 +1,5 @@
 using UnityEngine;
+using DeathLine;
 
 namespace DeathLine {
     [CreateAssetMenu(menuName = "DeathLine/Data/CharacterData", fileName = "CharacterData_")]
