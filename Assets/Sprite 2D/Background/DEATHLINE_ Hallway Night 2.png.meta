@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c0344ca4f53e2814dac565ee01fa3a43
+guid: e439b909c06d516468ec443bd2048938
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8358961042474600676
-    second: DEATHLINE_Johan Idle R_0
+      213: 948292810633655563
+    second: DEATHLINE_ Hallway Night 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DEATHLINE_Johan Idle R_0
+      name: DEATHLINE_ Hallway Night 2_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 0
         y: 0
-        width: 39
-        height: 60
+        width: 585
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e8070cc7cef00470800000000000000
-      internalID: 8358961042474600676
+      spriteID: b0530e87943092d00800000000000000
+      internalID: 948292810633655563
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DEATHLINE_Johan Idle R_0: 8358961042474600676
+      DEATHLINE_ Hallway Night 2_0: 948292810633655563
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
