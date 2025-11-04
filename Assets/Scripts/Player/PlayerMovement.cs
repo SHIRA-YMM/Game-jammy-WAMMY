@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     // internal
     Vector2 moveInput = Vector2.zero;
-    int facing = -1; // 1 = right, -1 = left
+    int facing = 1; // 1 = right, -1 = left
 
     void Awake()
     {
@@ -51,10 +51,13 @@ public class PlayerMovement : MonoBehaviour
         // movement (hanya horizontal)
         rb.linearVelocity = new Vector2(hx * moveSpeed, rb.linearVelocity.y);
 
-        // update facing hanya ketika ada input horizontal signifikan
+        // update facing direction sesuai arah gerakan
         if (Mathf.Abs(hx) > movementThreshold)
         {
-            facing = hx > 0 ? 1 : -1;
+            // Mengubah logika facing:
+            // Jalan ke kiri (hx < 0) = facing -1 (untuk animasi _left)
+            // Jalan ke kanan (hx > 0) = facing 1 (untuk animasi _right)
+            facing = (hx > 0) ? 1 : -1;
         }
 
         // update animator
