@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 342039254}
   - component: {fileID: 342039253}
   - component: {fileID: 342039252}
+  - component: {fileID: 342039255}
   m_Layer: 5
   m_Name: LeftButton
   m_TagString: Untagged
@@ -154,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0471342, y: 0.070423804}
   m_AnchorMax: {x: 0.134, y: 0.2547063}
-  m_AnchoredPosition: {x: -0.011291504, y: -0.0113220215}
+  m_AnchoredPosition: {x: -0.011291504, y: -0.011352539}
   m_SizeDelta: {x: -2, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342039252
@@ -239,6 +240,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342039250}
   m_CullTransparentMesh: 1
+--- !u!114 &342039255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342039250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.OnScreen.OnScreenButton
+  m_ControlPath: <Keyboard>/a
 --- !u!1 &448868738
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,6 +344,7 @@ GameObject:
   - component: {fileID: 570714975}
   - component: {fileID: 570714974}
   - component: {fileID: 570714973}
+  - component: {fileID: 570714976}
   m_Layer: 5
   m_Name: RightButton
   m_TagString: Untagged
@@ -438,6 +453,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570714971}
   m_CullTransparentMesh: 1
+--- !u!114 &570714976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570714971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.OnScreen.OnScreenButton
+  m_ControlPath: <Keyboard>/d
 --- !u!1 &611327840
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34240267, y: 0.71729356}
   m_AnchorMax: {x: 0.6582684, y: 0.814}
-  m_AnchoredPosition: {x: -0.50001526, y: 186}
+  m_AnchoredPosition: {x: -0.5, y: 186}
   m_SizeDelta: {x: -0.899292, y: -3.433197}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611327842
@@ -817,10 +845,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1448,6 +1476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SaveGame
   textNotif: {fileID: 611327840}
+  hasSaved: 0
 --- !u!1 &1590232902
 GameObject:
   m_ObjectHideFlags: 0
