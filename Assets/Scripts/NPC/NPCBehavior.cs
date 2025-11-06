@@ -11,28 +11,28 @@ public class NPCBehavior : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject interactionUI; // UI untuk interaksi
-
     [SerializeField] private GameObject ButtonDialog;
+
 
     private Vector3 startPosition;
     private float currentTarget;
-    private int facing = 1;
+    private int facing = 1; // 1 = right, -1 = left
     private bool canMove = true;
     private Transform playerTransform;
     private float idleTimer = 0f;
     private bool isIdle = false;
 
-    private Vector3 lastPosition; // tambahan untuk deteksi gerak
+    private Vector3 lastPosition;
 
     void Start()
     {
         if (animator == null) animator = GetComponentInChildren<Animator>();
         if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        
+
         startPosition = transform.position;
         currentTarget = startPosition.x + movementRange;
         lastPosition = transform.position;
-        
+
         // Pastikan UI interaksi tidak aktif saat mulai
         if (interactionUI != null)
             interactionUI.SetActive(false);
@@ -47,7 +47,6 @@ public class NPCBehavior : MonoBehaviour
                 facing = (playerTransform.position.x > transform.position.x) ? 1 : -1;
                 UpdateAnimation(true, false);
             }
-            // update lastPosition tetap agar deteksi gerak konsisten saat kembali bergerak
             lastPosition = transform.position;
             return;
         }
@@ -60,6 +59,7 @@ public class NPCBehavior : MonoBehaviour
             {
                 isIdle = false;
                 idleTimer = 0f;
+                SetNextTarget();
             }
             UpdateAnimation(true, false);
             lastPosition = transform.position;
@@ -75,23 +75,7 @@ public class NPCBehavior : MonoBehaviour
             // Masuk ke idle state
             isIdle = true;
             idleTimer = 0f;
-            
-
-
-
-            // Set target baru setelah idle
-            if (currentTarget >= startPosition.x + movementRange)
-            {
-                currentTarget = startPosition.x - movementRange;
-                facing = -1;
-            }
-            else
-            {
-                currentTarget = startPosition.x + movementRange;
-                facing = 1;
-            }
-
-            // Karena langsung masuk idle, tidak bergerak pada frame ini
+            SetNextTarget();
             UpdateAnimation(true, false);
             lastPosition = transform.position;
             return;
@@ -105,20 +89,54 @@ public class NPCBehavior : MonoBehaviour
         if (movedThisFrame)
             transform.position = new Vector3(newX, currentPos.y, currentPos.z);
 
-        // deteksi gerak aktual berdasarkan apakah kita memindahkan posisi pada frame ini
-        UpdateAnimation(false, movedThisFrame);
+        // Update facing direction berdasarkan arah gerakan
+        if (movedThisFrame)
+        {
+            facing = (newX > currentPos.x) ? 1 : -1;
+        }
 
-        // simpan posisi untuk frame berikutnya (cadangan)
+        UpdateAnimation(false, movedThisFrame);
         lastPosition = transform.position;
+    }
+
+    private void SetNextTarget()
+    {
+        float currentX = transform.position.x;
+
+        if (Mathf.Abs(currentX - (startPosition.x + movementRange)) < 0.1f)
+        {
+            currentTarget = startPosition.x - movementRange;
+            facing = -1;
+        }
+        else if (Mathf.Abs(currentX - (startPosition.x - movementRange)) < 0.1f)
+        {
+            currentTarget = startPosition.x + movementRange;
+            facing = 1;
+        }
+        else
+        {
+            if (currentX > startPosition.x)
+            {
+                currentTarget = startPosition.x - movementRange;
+                facing = -1;
+            }
+            else
+            {
+                currentTarget = startPosition.x + movementRange;
+                facing = 1;
+            }
+        }
     }
 
     private void UpdateAnimation(bool forceIdle, bool actuallyMoving)
     {
         if (animator != null)
         {
-            // isMoving true jika animator tidak dipaksa idle dan objek benar-benar berpindah pada frame ini
             bool isMoving = !forceIdle && actuallyMoving;
             animator.SetBool("isMoving", isMoving);
+
+            // Langsung set Direction ke facing (1 untuk right, -1 untuk left)
+            // Untuk semua state: idle dan walk menggunakan Direction yang sama
             animator.SetInteger("Direction", facing);
         }
     }
@@ -130,14 +148,12 @@ public class NPCBehavior : MonoBehaviour
             canMove = false;
             playerTransform = other.transform;
 
-            // Tampilkan UI interaksi
             if (interactionUI != null)
                 interactionUI.SetActive(true);
-
-                ButtonDialog.SetActive(true);
-
+           
             ButtonDialog.SetActive(true);
 
+            ButtonDialog.SetActive(true);
         }
     }
 
@@ -148,11 +164,20 @@ public class NPCBehavior : MonoBehaviour
             canMove = true;
             playerTransform = null;
 
-            // Sembunyikan UI interaksi
+            Vector3 currentPos = transform.position;
+            float distanceToTarget = Mathf.Abs(currentPos.x - currentTarget);
+
+            if (distanceToTarget > movementRange * 2f ||
+                (facing == 1 && currentTarget < currentPos.x) ||
+                (facing == -1 && currentTarget > currentPos.x))
+            {
+                SetNextTarget();
+            }
+
             if (interactionUI != null)
                 interactionUI.SetActive(false);
 
-                ButtonDialog.SetActive(false);
+                    ButtonDialog.SetActive(false);
 
             ButtonDialog.SetActive(false);
 
