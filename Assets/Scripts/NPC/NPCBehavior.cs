@@ -12,6 +12,8 @@ public class NPCBehavior : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject interactionUI; // UI untuk interaksi
 
+    [SerializeField] private GameObject ButtonDialog;
+
     private Vector3 startPosition;
     private float currentTarget;
     private int facing = 1;
@@ -124,10 +126,11 @@ public class NPCBehavior : MonoBehaviour
         {
             canMove = false;
             playerTransform = other.transform;
-            
+
             // Tampilkan UI interaksi
             if (interactionUI != null)
                 interactionUI.SetActive(true);
+                ButtonDialog.SetActive(true);
         }
     }
 
@@ -137,10 +140,11 @@ public class NPCBehavior : MonoBehaviour
         {
             canMove = true;
             playerTransform = null;
-            
+
             // Sembunyikan UI interaksi
             if (interactionUI != null)
                 interactionUI.SetActive(false);
+                ButtonDialog.SetActive(false);
         }
     }
 }
