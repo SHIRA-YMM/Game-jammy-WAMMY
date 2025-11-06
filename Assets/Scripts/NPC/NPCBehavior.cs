@@ -76,6 +76,9 @@ public class NPCBehavior : MonoBehaviour
             isIdle = true;
             idleTimer = 0f;
             
+
+
+
             // Set target baru setelah idle
             if (currentTarget >= startPosition.x + movementRange)
             {
@@ -130,7 +133,11 @@ public class NPCBehavior : MonoBehaviour
             // Tampilkan UI interaksi
             if (interactionUI != null)
                 interactionUI.SetActive(true);
+
                 ButtonDialog.SetActive(true);
+
+            ButtonDialog.SetActive(true);
+
         }
     }
 
@@ -144,7 +151,11 @@ public class NPCBehavior : MonoBehaviour
             // Sembunyikan UI interaksi
             if (interactionUI != null)
                 interactionUI.SetActive(false);
+
                 ButtonDialog.SetActive(false);
+
+            ButtonDialog.SetActive(false);
+
         }
     }
 }
