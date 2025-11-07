@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class DialogueManager : MonoBehaviour
     [Header("Events")]
     public UnityEvent OnDialogueStart;
     public UnityEvent OnDialogueEnd;
+    public UnityEvent OnBeforeSceneLoad; // dipanggil tepat sebelum memulai load (opsional)
 
     // Internal variables
     private DialogueData currentDialogue;
@@ -95,13 +97,13 @@ public class DialogueManager : MonoBehaviour
 
         if (useTypewriter && contentText != null)
         {
-            if (typingCoroutine != null) 
+            if (typingCoroutine != null)
                 StopCoroutine(typingCoroutine);
             typingCoroutine = StartCoroutine(TypeText(line.text));
         }
         else
         {
-            if (contentText != null) 
+            if (contentText != null)
                 contentText.text = line.text;
         }
     }
@@ -110,13 +112,13 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
         contentText.text = "";
-        
+
         for (int i = 0; i < fullText.Length; i++)
         {
             contentText.text += fullText[i];
             yield return new WaitForSeconds(typeSpeed);
         }
-        
+
         isTyping = false;
         typingCoroutine = null;
     }
@@ -125,11 +127,11 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentDialogue == null) return;
         if (currentLineIndex < 0 || currentLineIndex >= currentDialogue.lines.Count) return;
-        
+
         var line = currentDialogue.lines[currentLineIndex];
-        if (typingCoroutine != null) 
+        if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
-            
+
         contentText.text = line.text;
         isTyping = false;
         typingCoroutine = null;
@@ -137,11 +139,41 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        // Simpan data yang mungkin kita butuhkan untuk scene load sebelum di-null-kan
+        DialogueData dialogueToCheck = currentDialogue;
+
         currentDialogue = null;
         currentLineIndex = -1;
-        if (dialoguePanel != null) 
+        if (dialoguePanel != null)
             dialoguePanel.SetActive(false);
         OnDialogueEnd?.Invoke();
+
+        // Jika DialogueData meminta load scene, jalankan coroutine untuk itu
+        if (dialogueToCheck != null && dialogueToCheck.loadSceneOnEnd && !string.IsNullOrEmpty(dialogueToCheck.sceneToLoad))
+        {
+            StartCoroutine(HandleSceneLoadRoutine(dialogueToCheck.sceneToLoad, dialogueToCheck.delayBeforeLoad));
+        }
+    }
+
+    private IEnumerator HandleSceneLoadRoutine(string sceneName, float delay)
+    {
+        // Event hook sebelum memulai load (mis: untuk play transition anim)
+        OnBeforeSceneLoad?.Invoke();
+
+        if (delay > 0f)
+            yield return new WaitForSeconds(delay);
+
+        // Mulai load scene async agar tidak freeze (bisa dimodifikasi jadi LoadScene untuk simplicity)
+        AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
+        if (op == null)
+        {
+            Debug.LogWarning($"DialogueManager: Scene '{sceneName}' tidak ditemukan atau belum dimasukkan ke Build Settings.");
+            yield break;
+        }
+
+        // optional: tunggu sampai selesai (atau biarkan background load)
+        while (!op.isDone)
+            yield return null;
     }
 
     /// <summary>
@@ -157,7 +189,7 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void ForceEndDialogue()
     {
-        if (typingCoroutine != null) 
+        if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
         EndDialogue();
     }

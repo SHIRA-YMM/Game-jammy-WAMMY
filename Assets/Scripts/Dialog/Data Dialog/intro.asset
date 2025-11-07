@@ -43,3 +43,6 @@ MonoBehaviour:
       in her own world\u2019"
     characterName: Johan
     portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  loadSceneOnEnd: 1
+  sceneToLoad: day1
+  delayBeforeLoad: 0
