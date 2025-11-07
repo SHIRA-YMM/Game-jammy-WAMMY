@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -22,6 +22,7 @@ public class DayManager : MonoBehaviour
     public GameObject backgroundObject;
     public GameObject dayanimText;
     public GameObject fadeinBG;
+    
 
     [Tooltip("Sprite yang dipakai untuk mode pagi (sama setiap hari).")]
     public Sprite morningSprite;
@@ -77,13 +78,25 @@ public class DayManager : MonoBehaviour
 
     IEnumerator fadein()
     {
-        fadeinBG.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        // 1️⃣ Tampilkan fadeinBG lebih dulu
         dayanimText.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        //dayanimText.SetActive(false);
+
+        // tunggu 2 detik
+        yield return new WaitForSeconds(1f);
+
+        // 2️⃣ Setelah 2 detik, tampilkan teks
+        
+        //fadeinBG.SetActive(true);
+
+        // tunggu lagi 2 detik
+        yield return new WaitForSeconds(3f);
+
+        // 3️⃣ Setelah total 4 detik, sembunyikan semua
         fadeinBG.SetActive(false);
         dayanimText.SetActive(false);
     }
+
 
     #region Public API
 
@@ -205,8 +218,8 @@ public class DayManager : MonoBehaviour
         if (dayText == null) return;
 
         // contoh format: "Day 1 - Morning" atau dalam bahasa Indonesia: "Hari 1 (Pagi)"
-        string mode = isMorning ? "Pagi" : "Malam";
-        dayText.text = $"Hari {currentDay} ({mode})";
+        string mode = isMorning ? "Daylight" : "Night";
+        dayText.text = $"Day {currentDay} ({mode})";
     }
 
     #endregion
