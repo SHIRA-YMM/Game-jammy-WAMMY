@@ -13,12 +13,57 @@ MonoBehaviour:
   m_Name: nightmare hallway 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: 
-    characterName: 
+  - text: Wait a minute, is that?...
+    characterName: Johan
     portrait: {fileID: 0}
-  - text: 
-    characterName: 
+  - text: You're being so dramatic!
+    characterName: Lie
     portrait: {fileID: 0}
-  - text: 
-    characterName: 
+  - text: NO IM NOT?! WHAT IF WE'RE TRULY STUCK HERE FOREVER?!
+    characterName: Bert
     portrait: {fileID: 0}
+  - text: "OH GOD\u2026MY DISCORD NITRO, I'M WASTING MY PRECIOUS DISCORD NITRO!"
+    characterName: Bert
+    portrait: {fileID: 0}
+  - text: Eh, shut up for a moment, is that Johan?
+    characterName: Lie
+    portrait: {fileID: 0}
+  - text: Guys, what's going on? Why're we here?
+    characterName: Johan
+    portrait: {fileID: 0}
+  - text: HOW DO YOU EXPECT US TO KNOW?!
+    characterName: Bert
+    portrait: {fileID: 0}
+  - text: Okay, geez! Calm down a bit.
+    characterName: Johan
+    portrait: {fileID: 0}
+  - text: Wait a second, what are you guys even holding?...
+    characterName: Johan
+    portrait: {fileID: 0}
+  - text: Protection and offense of course!
+    characterName: Johan
+    portrait: {fileID: 0}
+  - text: I found this mouse laying around.
+    characterName: Lie
+    portrait: {fileID: 0}
+  - text: might be able to whip some ghosts with it so why not?
+    characterName: Lie
+    portrait: {fileID: 0}
+  - text: Dude! You have a stylus and a big keyboard! Give me the stylus at least!
+    characterName: Johan
+    portrait: {fileID: 0}
+  - text: What?! No! I need both of them!
+    characterName: Bert
+    portrait: {fileID: 0}
+  - text: What?! No! I need both of them!
+    characterName: Bert
+    portrait: {fileID: 0}
+  - text: What?! No! I need both of them!
+    characterName: Bert
+    portrait: {fileID: 0}
+  - text: What?! No! I need both of them!
+    characterName: Bert
+    portrait: {fileID: 0}
+  loadSceneOnEnd: 0
+  sceneToLoad: 
+  delayBeforeLoad: 0
