@@ -22,7 +22,8 @@ public class DayManager : MonoBehaviour
     public GameObject backgroundObject;
     public GameObject dayanimText;
     public GameObject fadeinBG;
-    
+    public GameObject blackBG;
+
 
     [Tooltip("Sprite yang dipakai untuk mode pagi (sama setiap hari).")]
     public Sprite morningSprite;
@@ -79,15 +80,16 @@ public class DayManager : MonoBehaviour
     IEnumerator fadein()
     {
         // 1️⃣ Tampilkan fadeinBG lebih dulu
+        blackBG.SetActive(true);
         dayanimText.SetActive(true);
         //dayanimText.SetActive(false);
 
         // tunggu 2 detik
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         // 2️⃣ Setelah 2 detik, tampilkan teks
-        
-        //fadeinBG.SetActive(true);
+        blackBG.SetActive(false);
+        fadeinBG.SetActive(true);
 
         // tunggu lagi 2 detik
         yield return new WaitForSeconds(3f);
