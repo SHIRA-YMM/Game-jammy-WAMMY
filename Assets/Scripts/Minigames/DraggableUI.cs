@@ -77,5 +77,6 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         transform.SetParent(originalParent, false);
         transform.SetSiblingIndex(originalSiblingIndex);
         rectTransform.anchoredPosition = originalAnchoredPos;
+        placed = false; // Reset placed status
     }
 }
