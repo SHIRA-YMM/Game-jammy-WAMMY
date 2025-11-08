@@ -32,9 +32,6 @@ MonoBehaviour:
   - text: "\u2018these bums\u2026\u2018"
     characterName: Johan
     portrait: {fileID: 6914696740287696220, guid: 6b705201406af4344882154af6f869a6, type: 3}
-  - text: Oh right, how's Destiny, Johan?
-    characterName: Lie
-    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
   - text: "My girlfriend's fine, Lie. In fact, I\u2019m gonna go see her now actually.
       Don\u2019t forget to do your guys\u2019 part in the project later."
     characterName: Johan

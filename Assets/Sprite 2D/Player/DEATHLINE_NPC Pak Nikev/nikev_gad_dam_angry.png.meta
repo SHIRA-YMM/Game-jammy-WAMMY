@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 99b7a3480570e2b4aa328d3cda629cf4
+guid: 50b5ccaa62d3a43499dd88912a1f6731
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8076780332728601345
-    second: DEATHLINE_Bert Neutral_0
+      213: 7090593900915413366
+    second: nikev_gad_dam_angry_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DEATHLINE_Bert Neutral_0
+      name: nikev_gad_dam_angry_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 28
         y: 0
-        width: 119
-        height: 181
+        width: 184
+        height: 215
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10b46258bec761070800000000000000
-      internalID: 8076780332728601345
+      spriteID: 6715d96d599d66260800000000000000
+      internalID: 7090593900915413366
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DEATHLINE_Bert Neutral_0: 8076780332728601345
+      nikev_gad_dam_angry_0: 7090593900915413366
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

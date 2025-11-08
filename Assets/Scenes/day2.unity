@@ -2419,7 +2419,7 @@ Transform:
   m_GameObject: {fileID: 1946819140}
   serializedVersion: 2
   m_LocalRotation: {x: 0.025169717, y: 0, z: 0, w: 0.9996832}
-  m_LocalPosition: {x: 0.24784803, y: 0.5151894, z: -9.921728}
+  m_LocalPosition: {x: 1.153172, y: 0.51469064, z: -9.921753}
   m_LocalScale: {x: 0.87, y: 1.0540423, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2607,7 +2607,7 @@ MonoBehaviour:
   useTypewriter: 1
   typeSpeed: 0.03
   dialogues:
-  - {fileID: 11400000, guid: 03820e81ed2a8644eaa8e0d9513daf13, type: 2}
+  - {fileID: 11400000, guid: 134261841d384c94987515fc52090f7c, type: 2}
   OnDialogueStart:
     m_PersistentCalls:
       m_Calls: []
@@ -2649,6 +2649,7 @@ MonoBehaviour:
   backgroundObject: {fileID: 807552917}
   dayanimText: {fileID: 646368490}
   fadeinBG: {fileID: 1760109134}
+  blackBG: {fileID: 0}
   morningSprite: {fileID: 21300000, guid: da2eae6748d99754ba53472d0521073e, type: 3}
   nightSprites:
   - {fileID: 21300000, guid: 60b464a4158365246bb8c96f0b06cf11, type: 3}

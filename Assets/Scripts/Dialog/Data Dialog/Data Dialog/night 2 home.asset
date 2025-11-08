@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddeacebce2c9105439170f16ca455405, type: 3}
-  m_Name: night 1
+  m_Name: night 2 home
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: Ugh, I need to get started on my part of the project but I'm so lazy...
+  - text: "And that\u2019s that\u2026hm, anything else I might need to do?"
     characterName: Johan
-    portrait: {fileID: 6914696740287696220, guid: 6b705201406af4344882154af6f869a6, type: 3}
-  - text: "So much to\u2026do\u2026"
-    characterName: Johan
-    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
   loadSceneOnEnd: 0
   sceneToLoad: 
   delayBeforeLoad: 0

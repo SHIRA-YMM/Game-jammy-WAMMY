@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddeacebce2c9105439170f16ca455405, type: 3}
+  m_Name: night 5 home
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: "Just a few more tweaks\u2026 and done. Finally."
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: Feels weird not stressing for once.
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: "...Guess I\u2019ll wait for their updates."
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: Johan waits for a while, and yet he receives no messages at all from either
+      of them.
+    characterName: Narrator
+    portrait: {fileID: 0}
+  - text: "...Man, I\u2019m so sleepy all of a sudden. Maybe just a short nap..."
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  loadSceneOnEnd: 0
+  sceneToLoad: 
+  delayBeforeLoad: 0

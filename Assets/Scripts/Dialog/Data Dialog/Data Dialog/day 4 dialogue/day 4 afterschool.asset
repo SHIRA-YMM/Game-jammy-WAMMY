@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddeacebce2c9105439170f16ca455405, type: 3}
+  m_Name: day 4 afterschool
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: Yeah, I already organized the texts and formatting. Pretty clean, eh?
+    characterName: Lie
+    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
+  - text: "Hm\u2026 surprisingly so. Everything\u2019s arranged nicely, good job."
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: Only the best.
+    characterName: Lie
+    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
+  - text: Heh? Is this picture from Printerest?
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: Dude! I took that myself!
+    characterName: Bert
+    portrait: {fileID: 4735308744777839670, guid: 6f33c622ba12f9040889734af0d73605, type: 3}
+  - text: Wait, seriously?
+    characterName: Johan
+    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  - text: Yeah! Right angle, lighting, ISO, easy! Looks pro, right?
+    characterName: Bert
+    portrait: {fileID: 8657541099234339137, guid: 03cdde1b1bc75c7498a34d197ed3152b, type: 3}
+  - text: "Didn\u2019t know you were into photography."
+    characterName: Lie
+    portrait: {fileID: 4758470530808116106, guid: 70aa89e569db92845815b76a6983ae14, type: 3}
+  - text: Kind of. I got into it after my mom made me do a photo album.
+    characterName: Bert
+    portrait: {fileID: 8657541099234339137, guid: 03cdde1b1bc75c7498a34d197ed3152b, type: 3}
+  - text: It turned out nice, but my relatives said it looked like a kid took it!
+    characterName: Bert
+    portrait: {fileID: 6623817764783677434, guid: 270d09e1b6bc05846a3584c6f560b4a3, type: 3}
+  - text: "Made me furious...but, they weren\u2019t totally wrong. It was my first
+      time handling a camera..."
+    characterName: Bert
+    portrait: {fileID: 6623817764783677434, guid: 270d09e1b6bc05846a3584c6f560b4a3, type: 3}
+  - text: "That\u2019s dumb. Everyone starts off bad."
+    characterName: Lie
+    portrait: {fileID: -3347910860309446074, guid: 3fabf6baa500b2840af3d34e0f4ca215, type: 3}
+  - text: What?
+    characterName: Bert
+    portrait: {fileID: 4735308744777839670, guid: 6f33c622ba12f9040889734af0d73605, type: 3}
+  - text: "She\u2019s right. What matters is doing what you like. Photography\u2019s
+      valuable, stick with it."
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: "Exactly! I\u2019m jealous you\u2019ve got a skill like that."
+    characterName: Lie
+    portrait: {fileID: -3347910860309446074, guid: 3fabf6baa500b2840af3d34e0f4ca215, type: 3}
+  - text: Skill?! You ace exams without studying!
+    characterName: Bert
+    portrait: {fileID: 4735308744777839670, guid: 6f33c622ba12f9040889734af0d73605, type: 3}
+  - text: "Doesn\u2019t mean I\u2019m good at doing things. Every business I tried
+      failed. Even my friends wouldn\u2019t buy from me."
+    characterName: Lie
+    portrait: {fileID: -3347910860309446074, guid: 3fabf6baa500b2840af3d34e0f4ca215, type: 3}
+  - text: "My mom joked it\u2019s because I\u2019m a girl\u2026 guess that hit harder
+      than it should\u2019ve."
+    characterName: Lie
+    portrait: {fileID: -7731782699828624873, guid: 6158f18d79e187642a73721347d5ff1b, type: 3}
+  - text: "That\u2019s awful!"
+    characterName: Bert
+    portrait: {fileID: 4735308744777839670, guid: 6f33c622ba12f9040889734af0d73605, type: 3}
+  - text: "Wait\u2014 actually?"
+    characterName: Johan
+    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  - text: "You\u2019ll get there, Lie. I can totally see you as a big corpo boss
+      running some company."
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: Yeah! what he said.
+    characterName: Bert
+    portrait: {fileID: 8657541099234339137, guid: 03cdde1b1bc75c7498a34d197ed3152b, type: 3}
+  - text: "That is true, like Augustus said, \u2018Everything we hear is an opinion,
+      not a fact.'"
+    characterName: Lie
+    portrait: {fileID: -6823298272712906800, guid: 632cc4ac93c582948872c19740d5c599, type: 3}
+  - text: That was Marcus Aurelius!
+    characterName: Johan
+    portrait: {fileID: 6914696740287696220, guid: 6b705201406af4344882154af6f869a6, type: 3}
+  - text: Romans are Romans.
+    characterName: Lie
+    portrait: {fileID: -3347910860309446074, guid: 3fabf6baa500b2840af3d34e0f4ca215, type: 3}
+  - text: ...What does that even mean?
+    characterName: Johan
+    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  - text: Anyway Johan! you like drawing, right?
+    characterName: Lie
+    portrait: {fileID: -3347910860309446074, guid: 3fabf6baa500b2840af3d34e0f4ca215, type: 3}
+  - text: "Destiny told you, huh? Yeah, just haven\u2019t drawn much lately. "
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: "Hard to stay motivated when some 13-year-old\u2019s painting masterpieces."
+    characterName: Johan
+    portrait: {fileID: 6914696740287696220, guid: 6b705201406af4344882154af6f869a6, type: 3}
+  - text: Let me guess... started drawing again after our misadventures?
+    characterName: Lie
+    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
+  - text: Haha, yeah. It feels like this artblock I had for months just got...lifted.
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: "I\u2019ve seen your art. It\u2019s good! I might even commission you..."
+    characterName: Bert
+    portrait: {fileID: 8657541099234339137, guid: 03cdde1b1bc75c7498a34d197ed3152b, type: 3}
+  - text: To draw your waifus? Right.
+    characterName: Johan
+    portrait: {fileID: 6914696740287696220, guid: 6b705201406af4344882154af6f869a6, type: 3}
+  - text: "Oh come on, man! We\u2019re best buddies now!"
+    characterName: Bert
+    portrait: {fileID: 4735308744777839670, guid: 6f33c622ba12f9040889734af0d73605, type: 3}
+  - text: "You didn\u2019t even deny it."
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: "But seriously, Jo! someone being better doesn\u2019t affect you. MINDSET."
+    characterName: Lie
+    portrait: {fileID: -6823298272712906800, guid: 632cc4ac93c582948872c19740d5c599, type: 3}
+  - text: "Yeah\u2026 guess you\u2019re right."
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: "\u2018It\u2019s really not too bad being paired with them.\u2019"
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: "Still\u2026 I better lock in on this project before my parents kill me."
+    characterName: Johan
+    portrait: {fileID: 6914696740287696220, guid: 6b705201406af4344882154af6f869a6, type: 3}
+  loadSceneOnEnd: 0
+  sceneToLoad: 
+  delayBeforeLoad: 0
