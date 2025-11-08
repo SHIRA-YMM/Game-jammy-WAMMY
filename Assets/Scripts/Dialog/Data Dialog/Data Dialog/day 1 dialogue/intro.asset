@@ -47,6 +47,6 @@ MonoBehaviour:
       but means well\u2026 I hope'"
     characterName: Johan
     portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
-  loadSceneOnEnd: 0
-  sceneToLoad: 
+  loadSceneOnEnd: 1
+  sceneToLoad: day1
   delayBeforeLoad: 0

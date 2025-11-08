@@ -383,10 +383,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -641,6 +641,10 @@ PrefabInstance:
       propertyPath: portraitImage
       value: 
       objectReference: {fileID: 245460059875618842}
+    - target: {fileID: 9201235486417993650, guid: de6ec0769d47e904db4e5cae62ae22e5, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: fea52db28af00374490b0d0de1ca1aea, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -665,6 +669,10 @@ PrefabInstance:
     - target: {fileID: 4888739093943741383, guid: b029d8cf85e8c0c4189f4d94c7984b89, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945310434730335027, guid: b029d8cf85e8c0c4189f4d94c7984b89, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.5000305
       objectReference: {fileID: 0}
     - target: {fileID: 6827734379295852135, guid: b029d8cf85e8c0c4189f4d94c7984b89, type: 3}
       propertyPath: m_Pivot.x
