@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddeacebce2c9105439170f16ca455405, type: 3}
+  m_Name: day 5
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: "Finally. We\u2019re actually almost done."
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: "Can\u2019t believe I\u2019m saying this, but I might miss this chaos when
+      it\u2019s over."
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: Really now? That's a shocker coming from you.
+    characterName: Lie
+    portrait: {fileID: 4758470530808116106, guid: 70aa89e569db92845815b76a6983ae14, type: 3}
+  - text: "I\u2019m just glad we survived this week..."
+    characterName: Bert
+    portrait: {fileID: 4735308744777839670, guid: 6f33c622ba12f9040889734af0d73605, type: 3}
+  - text: "Though, Saturday\u2019s gonna be nice. Let\u2019s just call and play games
+      tomorrow!"
+    characterName: Bert
+    portrait: {fileID: 8657541099234339137, guid: 03cdde1b1bc75c7498a34d197ed3152b, type: 3}
+  - text: We totally deserve it!
+    characterName: Bert
+    portrait: {fileID: 8657541099234339137, guid: 03cdde1b1bc75c7498a34d197ed3152b, type: 3}
+  - text: We do! After this project, we deserve a break worthy of legends.
+    characterName: Lie
+    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
+  - text: YEAH! That teacher won't be at our throats anymore.
+    characterName: Bert
+    portrait: {fileID: 8657541099234339137, guid: 03cdde1b1bc75c7498a34d197ed3152b, type: 3}
+  - text: well, not until the next assignment at the very least...
+    characterName: Bert
+    portrait: {fileID: 8076780332728601345, guid: 99b7a3480570e2b4aa328d3cda629cf4, type: 3}
+  - text: "Anyway, I\u2019ll upload the last batch of photos tonight."
+    characterName: Bert
+    portrait: {fileID: 8076780332728601345, guid: 99b7a3480570e2b4aa328d3cda629cf4, type: 3}
+  - text: "I\u2019ll finish the illustrations. Let\u2019s vc at 4 tomorrow once we\u2019re
+      done."
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: "Deal. Let\u2019s actually finish strong this time!"
+    characterName: Lie
+    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
+  - text: Right! one more thing though...
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: I had this...strange voice in the back of my head, earlier...
+    characterName: Johan
+    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  - text: 'It was saying something about facing worse and, I think we''ll need to
+      really gear up tonight. '
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: That's actually pretty scary...
+    characterName: Bert
+    portrait: {fileID: 4735308744777839670, guid: 6f33c622ba12f9040889734af0d73605, type: 3}
+  - text: Psh! No issue, we'll show your sleep paralysis demons we're able to end
+      this!
+    characterName: Lie
+    portrait: {fileID: -6823298272712906800, guid: 632cc4ac93c582948872c19740d5c599, type: 3}
+  - text: 'Good point! See you all later then. '
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  loadSceneOnEnd: 0
+  sceneToLoad: 
+  delayBeforeLoad: 0

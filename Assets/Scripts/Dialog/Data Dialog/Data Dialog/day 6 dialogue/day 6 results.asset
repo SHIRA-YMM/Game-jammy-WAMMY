@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddeacebce2c9105439170f16ca455405, type: 3}
+  m_Name: day 6 results
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: "it\u2019s done. Every file sorted, every layout fixed."
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: "Can\u2019t believe we actually pulled this off!"
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: It's already 4 huh? I should hop in VC.
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: Jo! You're done with the layouting and all? We're so gonna get a 100!
+    characterName: Lie
+    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
+  - text: "Don\u2019t jinx it, Lie!"
+    characterName: Bert
+    portrait: {fileID: 4735308744777839670, guid: 6f33c622ba12f9040889734af0d73605, type: 3}
+  - text: Afterall, the man who moves mountains, begins by carrying away small stones.
+      Said confusion.
+    characterName: Lie
+    portrait: {fileID: -6823298272712906800, guid: 632cc4ac93c582948872c19740d5c599, type: 3}
+  - text: "It's confucius, not confusion for God's sa\u2014...you know what?"
+    characterName: Johan
+    portrait: {fileID: 6914696740287696220, guid: 6b705201406af4344882154af6f869a6, type: 3}
+  - text: Let's get to the point, I'm sharing my screen, hop in.
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: "Hold on! I'm pulling right now, I'm close to pit\u2014"
+    characterName: Bert
+    portrait: {fileID: 4735308744777839670, guid: 6f33c622ba12f9040889734af0d73605, type: 3}
+  - text: Just get in!
+    characterName: Lie
+    portrait: {fileID: -7731782699828624873, guid: 6158f18d79e187642a73721347d5ff1b, type: 3}
+  - text: "Submitting to Google Classroom\u2026"
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: "and\u2026 sent."
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: Finally! No more deadlines!
+    characterName: Lie
+    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
+  - text: "So\u2026 how do you guys feel?"
+    characterName: Lie
+    portrait: {fileID: -3347910860309446074, guid: 3fabf6baa500b2840af3d34e0f4ca215, type: 3}
+  - text: Exhausted. But weirdly proud.
+    characterName: Bert
+    portrait: {fileID: 8657541099234339137, guid: 03cdde1b1bc75c7498a34d197ed3152b, type: 3}
+  - text: "Same. It\u2019s like we fought through something bigger than a project."
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: 'Cause'' we did! '
+    characterName: Lie
+    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
+  - text: "And we didn\u2019t just give up in the process, surprisingly enough..."
+    characterName: Lie
+    portrait: {fileID: -3347910860309446074, guid: 3fabf6baa500b2840af3d34e0f4ca215, type: 3}
+  - text: You know, I always did think you were a bit too boring Johan.
+    characterName: Lie
+    portrait: {fileID: -3347910860309446074, guid: 3fabf6baa500b2840af3d34e0f4ca215, type: 3}
+  - text: But you had some massive character development.
+    characterName: Lie
+    portrait: {fileID: -3347910860309446074, guid: 3fabf6baa500b2840af3d34e0f4ca215, type: 3}
+  - text: I wasn't the only one?
+    characterName: Bert
+    portrait: {fileID: 8076780332728601345, guid: 99b7a3480570e2b4aa328d3cda629cf4, type: 3}
+  - text: What?
+    characterName: Johan
+    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  - text: nothing.
+    characterName: Lie
+    portrait: {fileID: -3347910860309446074, guid: 3fabf6baa500b2840af3d34e0f4ca215, type: 3}
+  - text: The three of them continued on to play games, until a notification comes
+      in.
+    characterName: Narrator
+    portrait: {fileID: 0}
+  - text: "\u2026Wait, did you guys get a notification?"
+    characterName: Johan
+    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  - text: "Our grade\u2019s in."
+    characterName: Johan
+    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  - text: Gotta be above the bare minimum, right?!
+    characterName: Lie
+    portrait: {fileID: 4758470530808116106, guid: 70aa89e569db92845815b76a6983ae14, type: 3}
+  - text: Uugh, I can't check myself, just say it outloud!
+    characterName: Bert
+    portrait: {fileID: 4735308744777839670, guid: 6f33c622ba12f9040889734af0d73605, type: 3}
+  - text: Seventy-eight!
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: "...I was expecting higher but\u2014"
+    characterName: Lie
+    portrait: {fileID: 4758470530808116106, guid: 70aa89e569db92845815b76a6983ae14, type: 3}
+  - text: WE PASSED!
+    characterName: Bert
+    portrait: {fileID: 8657541099234339137, guid: 03cdde1b1bc75c7498a34d197ed3152b, type: 3}
+  - text: "I\u2019m actually proud of us..."
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: "As you should be, afterall\u2014"
+    characterName: Lie
+    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
+  - text: Inspirational quote paired with the wrong historical figure.
+    characterName: Johan
+    portrait: {fileID: 6914696740287696220, guid: 6b705201406af4344882154af6f869a6, type: 3}
+  - text: Oh come on!
+    characterName: Lie
+    portrait: {fileID: -7731782699828624873, guid: 6158f18d79e187642a73721347d5ff1b, type: 3}
+  - text: I actually wanted to hear this one...
+    characterName: Bert
+    portrait: {fileID: 8076780332728601345, guid: 99b7a3480570e2b4aa328d3cda629cf4, type: 3}
+  - text: Kidding-kidding, go on.
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: "Afterall, it's all about the mindset, right guys?\u2014"
+    characterName: Lie
+    portrait: {fileID: -6823298272712906800, guid: 632cc4ac93c582948872c19740d5c599, type: 3}
+  - text: Is mindset your favorite word or something?
+    characterName: Bert
+    portrait: {fileID: 8076780332728601345, guid: 99b7a3480570e2b4aa328d3cda629cf4, type: 3}
+  - text: "No? I have like, 10 other favorite wor\u2014"
+    characterName: Lie
+    portrait: {fileID: 4758470530808116106, guid: 70aa89e569db92845815b76a6983ae14, type: 3}
+  - text: "Wait, guys\u2014 The match!"
+    characterName: Johan
+    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  - text: I THOUGHT WE ALREADY LOST?!
+    characterName: Lie
+    portrait: {fileID: 4758470530808116106, guid: 70aa89e569db92845815b76a6983ae14, type: 3}
+  - text: IT'S RANKED, THERE'S MORE THAN A SINGLE ROUND!!
+    characterName: Johan
+    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  - text: "DAMNIT!\u2014"
+    characterName: Bert
+    portrait: {fileID: 6623817764783677434, guid: 270d09e1b6bc05846a3584c6f560b4a3, type: 3}
+  - text: ...
+    characterName: Johan
+    portrait: {fileID: 0}
+  - text: "Maybe it\u2019s not a perfect grade."
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: But a pass is still a pass, right?
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  - text: Procrastination, burnout, art block, those happen to everyone.
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: What matters is that we kept going.
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: And somehow, I'm glad I ended up with these two bums.
+    characterName: Johan
+    portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
+  loadSceneOnEnd: 0
+  sceneToLoad: 
+  delayBeforeLoad: 0

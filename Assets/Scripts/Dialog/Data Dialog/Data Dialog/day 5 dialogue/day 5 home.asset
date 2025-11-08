@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddeacebce2c9105439170f16ca455405, type: 3}
+  m_Name: day 5 home
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: '" Brace yourself for worse...you''ll never truly finish that project.
+      " says a voice as Johan clutches his eyes shut.'
+    characterName: Narrator
+    portrait: {fileID: 0}
+  - text: Johan quickly sits upright, eyes wide.
+    characterName: Narrator
+    portrait: {fileID: 0}
+  - text: What the?...
+    characterName: Johan
+    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  - text: I need to get to school!
+    characterName: Johan
+    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  loadSceneOnEnd: 0
+  sceneToLoad: 
+  delayBeforeLoad: 0
