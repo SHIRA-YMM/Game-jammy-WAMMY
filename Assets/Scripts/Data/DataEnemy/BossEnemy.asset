@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b731a0465d93f41bbbee1b940b3ffb, type: 3}
   m_Name: BossEnemy
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSO
-  characterName: Boss
-  portrait: {fileID: -8131465392973976975, guid: 5e489e8a059ea674f8f66bc4538ab4ff, type: 3}
+  characterName: Sir Nikev
+  portrait: {fileID: 7090593900915413366, guid: 50b5ccaa62d3a43499dd88912a1f6731, type: 3}
   maxHP: 300
-  atk: 35
+  atk: 25
   skills: []
   isEnemy: 1

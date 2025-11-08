@@ -15,6 +15,6 @@ MonoBehaviour:
   characterName: Johan
   portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
   maxHP: 100
-  atk: 10
+  atk: 25
   skills: []
   isEnemy: 0

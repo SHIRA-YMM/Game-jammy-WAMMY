@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSO
   characterName: Bert
   portrait: {fileID: 8657541099234339137, guid: 03cdde1b1bc75c7498a34d197ed3152b, type: 3}
-  maxHP: 100
-  atk: 10
+  maxHP: 150
+  atk: 15
   skills: []
   isEnemy: 0

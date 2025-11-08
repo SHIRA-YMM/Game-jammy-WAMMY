@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b731a0465d93f41bbbee1b940b3ffb, type: 3}
   m_Name: Enemy3
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSO
-  characterName: Enemy3
-  portrait: {fileID: -8131465392973976975, guid: 5e489e8a059ea674f8f66bc4538ab4ff, type: 3}
+  characterName: Shreal
+  portrait: {fileID: 5691161129782362352, guid: 366282b6afa44e5448e31ec42aaa8943, type: 3}
   maxHP: 200
   atk: 20
   skills: []

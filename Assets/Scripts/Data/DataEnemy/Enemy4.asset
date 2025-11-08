@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b731a0465d93f41bbbee1b940b3ffb, type: 3}
   m_Name: Enemy4
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSO
-  characterName: Enemy4
-  portrait: {fileID: -8131465392973976975, guid: 5e489e8a059ea674f8f66bc4538ab4ff, type: 3}
+  characterName: Monoly
+  portrait: {fileID: 8765402378025666836, guid: bd2baf1071e2e044a9759dc3ce15ddd7, type: 3}
   maxHP: 200
-  atk: 22
+  atk: 25
   skills: []
   isEnemy: 1
