@@ -19,11 +19,13 @@ MonoBehaviour:
   - text: The doors locked, help, HELPP!!
     characterName: Johan
     portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
+  - text: No answer...
+    characterName: Narrator
+    portrait: {fileID: 0}
   - text: I need to find something in the school to pry the doors open.
     characterName: Johan
     portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
-  - text: "I need to find something in the school to pry the doors open, I remember
-      a broom was upstairs\u2026"
+  - text: "I remember a broom was upstairs\u2026"
     characterName: Johan
     portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
   loadSceneOnEnd: 0

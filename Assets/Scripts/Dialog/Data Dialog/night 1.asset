@@ -19,18 +19,6 @@ MonoBehaviour:
   - text: "So much to\u2026do\u2026"
     characterName: Johan
     portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
-  - text: 
-    characterName: 
-    portrait: {fileID: 0}
-  - text: 
-    characterName: 
-    portrait: {fileID: 0}
-  - text: 
-    characterName: 
-    portrait: {fileID: 0}
-  - text: 
-    characterName: 
-    portrait: {fileID: 0}
-  - text: 
-    characterName: 
-    portrait: {fileID: 0}
+  loadSceneOnEnd: 0
+  sceneToLoad: 
+  delayBeforeLoad: 0

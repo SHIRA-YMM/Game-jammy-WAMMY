@@ -13,18 +13,32 @@ MonoBehaviour:
   m_Name: day 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: Tes Dialog 1 ini
+  - text: So I guess that's about all we have to do.
     characterName: Johan
     portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
-  - text: Tes Dialog Lie 1
+  - text: Hm, doesn't seem like too much work.
     characterName: Lie
     portrait: {fileID: -3347910860309446074, guid: 3fabf6baa500b2840af3d34e0f4ca215, type: 3}
-  - text: Tes Dialog Johan 2
-    characterName: Johan
-    portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
-  - text: Tes Dialog Johan 3
+  - text: Doesn't seem like too much work?!
+    characterName: Bert
+    portrait: {fileID: 4735308744777839670, guid: 6f33c622ba12f9040889734af0d73605, type: 3}
+  - text: Of course it is! I have 10 discord servers to moderate! Damn it!
+    characterName: Bert
+    portrait: {fileID: 6623817764783677434, guid: 270d09e1b6bc05846a3584c6f560b4a3, type: 3}
+  - text: "Work is just an illusion, progress is when we actually do something\u2026mindset
+      guys\u2026"
     characterName: Lie
-    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
-  - text: Tes Dialog Johan 3
+    portrait: {fileID: -6823298272712906800, guid: 632cc4ac93c582948872c19740d5c599, type: 3}
+  - text: "\u2018these bums\u2026\u2018"
     characterName: Johan
     portrait: {fileID: 6914696740287696220, guid: 6b705201406af4344882154af6f869a6, type: 3}
+  - text: Oh right, how's Destiny, Johan?
+    characterName: Lie
+    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
+  - text: "My girlfriend's fine, Lie. In fact, I\u2019m gonna go see her now actually.
+      Don\u2019t forget to do your guys\u2019 part in the project later."
+    characterName: Johan
+    portrait: {fileID: 6914696740287696220, guid: 6b705201406af4344882154af6f869a6, type: 3}
+  loadSceneOnEnd: 0
+  sceneToLoad: 
+  delayBeforeLoad: 0
