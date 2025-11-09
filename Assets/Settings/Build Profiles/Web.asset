@@ -29,6 +29,8 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/minigamesDG.unity
   - m_enabled: 1
+    m_path: Assets/Scenes/night1.unity
+  - m_enabled: 1
     m_path: Assets/Scenes/Combat.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:

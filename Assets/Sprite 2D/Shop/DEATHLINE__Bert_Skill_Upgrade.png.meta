@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: cc25e3cd3c5266440b9992d74c337d6e
+guid: 36c59913c1a68454ab8d6e216cc63aeb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7375841257296517617
-    second: gloss_0
-  - first:
-      213: 7980802975672604322
-    second: gloss_1
-  - first:
-      213: -7631127250443614599
-    second: gloss_2
+      213: -2377261603800890
+    second: DEATHLINE__Bert_Skill_Upgrade_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -107,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -120,7 +114,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gloss_1
+      name: DEATHLINE__Bert_Skill_Upgrade_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 35
-        width: 43
-        height: 27
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a69853b50281ce60800000000000000
-      internalID: 7980802975672604322
+      spriteID: 6c83196a4ed87fff0800000000000000
+      internalID: -2377261603800890
       vertices: []
       indices: 
       edges: []
@@ -157,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cf65e3fc6f908174c904aca7d0c0648f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -165,13 +159,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      gloss_0: -7375841257296517617
-      gloss_1: 7980802975672604322
-      gloss_2: -7631127250443614599
+      DEATHLINE__Bert_Skill_Upgrade_0: -2377261603800890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
