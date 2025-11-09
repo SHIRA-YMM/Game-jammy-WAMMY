@@ -1120,6 +1120,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3d1177f67880f76408adbd9c2e2566a6, type: 2}
+    - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
+      propertyPath: m_text
+      value: Keyboard's getting a bit damaged...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
+      propertyPath: m_lineSpacing
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 3113648237667054124, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.25
@@ -4291,6 +4299,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
+      propertyPath: m_text
+      value: My mouse is still fine!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
+      propertyPath: m_lineSpacing
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 3113648237667054124, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1896167
