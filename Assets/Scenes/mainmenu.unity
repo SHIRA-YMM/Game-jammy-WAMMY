@@ -279,31 +279,11 @@ MonoBehaviour:
     clip: {fileID: 0}
   - sceneName: day4
     clip: {fileID: 0}
-  - sceneName: day5
+  - sceneName: day4
     clip: {fileID: 0}
-  - sceneName: Combat1
+  - sceneName: day4
     clip: {fileID: 0}
-  - sceneName: Combat2
-    clip: {fileID: 0}
-  - sceneName: Combat3
-    clip: {fileID: 0}
-  - sceneName: Combat4
-    clip: {fileID: 0}
-  - sceneName: Combat5
-    clip: {fileID: 0}
-  - sceneName: night1
-    clip: {fileID: 0}
-  - sceneName: Night2
-    clip: {fileID: 0}
-  - sceneName: Night3
-    clip: {fileID: 0}
-  - sceneName: Night4
-    clip: {fileID: 0}
-  - sceneName: intro
-    clip: {fileID: 0}
-  - sceneName: intro
-    clip: {fileID: 0}
-  defaultBgm: {fileID: 0}
+  defaultBgm: {fileID: 8300000, guid: 7abdd92ebc2253f4d992c3a2250fec8d, type: 3}
   bgmVolume: 0.6
   sfxVolume: 1
   fadeTime: 0.75
@@ -1177,7 +1157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &643618825
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2148,7 +2128,7 @@ RectTransform:
   m_Father: {fileID: 2101729909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2165,15 +2145,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.56078434, g: 0.78823537, b: 0.7843138, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2224,10 +2204,10 @@ RectTransform:
   - {fileID: 870192762}
   m_Father: {fileID: 1972972214}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.3936755, y: 0.4774128}
-  m_AnchorMax: {x: 0.60764897, y: 0.5225872}
-  m_AnchoredPosition: {x: 0.5000534, y: 1}
-  m_SizeDelta: {x: -1, y: -2}
+  m_AnchorMin: {x: 0.27400002, y: 0.48357296}
+  m_AnchorMax: {x: 0.75086737, y: 0.5678007}
+  m_AnchoredPosition: {x: 0, y: -1.0979996}
+  m_SizeDelta: {x: 0.11659241, y: 3.8041992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1023733733
 MonoBehaviour:
@@ -2276,7 +2256,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2449,9 +2429,9 @@ RectTransform:
   m_Father: {fileID: 870192762}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 5.6987, y: 0}
+  m_SizeDelta: {x: 8.6023, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1241076409
 MonoBehaviour:
@@ -2473,7 +2453,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -4814569327086630094, guid: 20fa862e9b76463429b8f2b2fe55dfa3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3898,6 +3878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2101729909}
+  - component: {fileID: 2101729910}
   m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
@@ -3925,6 +3906,64 @@ RectTransform:
   m_AnchoredPosition: {x: -5.000061, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &2101729910
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101729908}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.28, y: 0.96}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2114154076
 GameObject:
   m_ObjectHideFlags: 0
@@ -4091,8 +4130,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -6.228821, y: -1.2456999}
+  m_SizeDelta: {x: 12.4577, y: 28.2374}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2116703107
 MonoBehaviour:
@@ -4114,8 +4153,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -7991966874940893347, guid: a7d5330de08d23b4ab0a62976478099d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
