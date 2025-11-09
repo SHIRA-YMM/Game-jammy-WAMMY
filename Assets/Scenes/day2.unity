@@ -5520,7 +5520,7 @@ Transform:
   m_GameObject: {fileID: 1946819140}
   serializedVersion: 2
   m_LocalRotation: {x: 0.025169717, y: 0, z: 0, w: 0.9996832}
-  m_LocalPosition: {x: 2.432363, y: 0.5139923, z: -9.921788}
+  m_LocalPosition: {x: 1.153172, y: 0.51469064, z: -9.921753}
   m_LocalScale: {x: 0.87, y: 1.0540423, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6005,8 +6005,8 @@ MonoBehaviour:
   useTypewriter: 1
   typeSpeed: 0.03
   dialogues:
-  - {fileID: 11400000, guid: 9bd4fba12e1aade4aa2c6e4fb5bb0a75, type: 2}
-  - {fileID: 11400000, guid: 19bb9b8e4a2c7474e9a14512c2533bef, type: 2}
+  - {fileID: 11400000, guid: 017aeaa1919cbb441a1d0e5e6acac851, type: 2}
+  - {fileID: 11400000, guid: 134261841d384c94987515fc52090f7c, type: 2}
   OnDialogueStart:
     m_PersistentCalls:
       m_Calls: []
