@@ -24,8 +24,23 @@ MonoBehaviour:
       delusional weeb, how did my life end up like this?\u2018"
     characterName: Johan
     portrait: {fileID: 6914696740287696220, guid: 6b705201406af4344882154af6f869a6, type: 3}
-  - text: Oh yeah, me and Bert checked all the doors again, the first rooms opened
-      but we decided to wait for you.
+  - text: Wait, ya guys notice anything?
+    characterName: Lie
+    portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
+  - text: Look at the absent machine...it's colored now!
+    characterName: Lie
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: And...how does that help us?
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: Can I not make conversation?
+    characterName: Johan
+    portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
+  - text: Well, I gotta admit, it IS a bit odd...
+    characterName: Bert
+    portrait: {fileID: 8076780332728601345, guid: 99b7a3480570e2b4aa328d3cda629cf4, type: 3}
+  - text: Oh yeah, me and Bert got here first...again,  but we decided to wait for
+      you to start kciking some butt!
     characterName: Lie
     portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
   - text: "You see, it's only right for us to fulfill the paragon of friendship,
