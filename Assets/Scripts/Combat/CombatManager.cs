@@ -205,7 +205,7 @@ public class CombatManager : MonoBehaviour
         {
             int dmg = actor.characterData.atk;
             enemyRuntime.TakeDamage(dmg);
-            if (uiManager != null) uiManager.ShowInfo($"{actor.characterData.characterName} menyerang {dmg} dmg");
+            if (uiManager != null) uiManager.ShowInfo($"{actor.characterData.characterName} attacks {dmg} dmg");
             Debug.Log($"{actor.characterData.characterName} attack -> {dmg}");
             yield return new WaitForSeconds(0.6f);
         }
@@ -233,7 +233,7 @@ public class CombatManager : MonoBehaviour
                     case SkillType.Attack:
                         int dmg = Mathf.CeilToInt(skill.flatValue + actor.characterData.atk * skill.valueMultiplier);
                         enemyRuntime.TakeDamage(dmg);
-                        if (uiManager != null) uiManager.ShowInfo($"{user} menggunakan {skill.skillName}! Damage {dmg}");
+                        if (uiManager != null) uiManager.ShowInfo($"{user} uses {skill.skillName}! Damage {dmg}");
                         Debug.Log($"{user} skill Attack {skill.skillName} -> {dmg}");
                         break;
 
@@ -256,17 +256,17 @@ public class CombatManager : MonoBehaviour
                             t.currentHP += heal;
                             if (t.currentHP > t.GetMaxHP()) t.currentHP = t.GetMaxHP();
                             t.UpdateHPUI();
-                            if (uiManager != null) uiManager.ShowInfo($"{user} menyembuhkan {t.characterData.characterName} +{heal} HP");
+                            if (uiManager != null) uiManager.ShowInfo($"{user} heals {t.characterData.characterName} +{heal} HP");
                         }
-                        Debug.Log($"{user} menggunakan {skill.skillName} (Heal)");
+                        Debug.Log($"{user} uses {skill.skillName} (Heal)");
                         break;
 
                     case SkillType.DefenseBuff:
                         bertRuntime.isDefending = bertRuntime.IsAlive();
                         lieRuntime.isDefending = lieRuntime.IsAlive();
                         johanRuntime.isDefending = johanRuntime.IsAlive();
-                        if (uiManager != null) uiManager.ShowInfo($"{user} menggunakan {skill.skillName}! Semua bertahan!");
-                        Debug.Log($"{user} skill defense buff aktif");
+                        if (uiManager != null) uiManager.ShowInfo($"{user} uses {skill.skillName}! defense for everyone!");
+                        Debug.Log($"{user} skill defense buff active");
                         break;
                 }
 
@@ -298,7 +298,7 @@ public class CombatManager : MonoBehaviour
         int dmg = Mathf.CeilToInt(target.GetMaxHP() * pct);
         target.TakeDamage(dmg);
 
-        if (uiManager != null) uiManager.ShowInfo($"Enemy menyerang {target.characterData.characterName} -> {dmg} dmg");
+        if (uiManager != null) uiManager.ShowInfo($"Enemy attacks {target.characterData.characterName} -> {dmg} dmg");
         Debug.Log($"Enemy attack {target.characterData.characterName} dmg {dmg}");
 
         yield return new WaitForSeconds(0.8f);
