@@ -15,6 +15,6 @@ MonoBehaviour:
   characterName: Shreal
   portrait: {fileID: 5691161129782362352, guid: 366282b6afa44e5448e31ec42aaa8943, type: 3}
   maxHP: 200
-  atk: 20
+  atk: 50
   skills: []
   isEnemy: 1

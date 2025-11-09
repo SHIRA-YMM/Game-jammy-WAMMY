@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSO
   characterName: Monoly
   portrait: {fileID: 8765402378025666836, guid: bd2baf1071e2e044a9759dc3ce15ddd7, type: 3}
-  maxHP: 200
-  atk: 25
+  maxHP: 676
+  atk: 20
   skills: []
   isEnemy: 1
