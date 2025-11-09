@@ -72,6 +72,12 @@ public class CombatManager : MonoBehaviour
     {
         Debug.Log($"Setup Day {day}");
 
+        // Ensure saved skills are loaded into CharacterSO assets before creating runtimes
+        var allSkills = Resources.FindObjectsOfTypeAll<SkillSO>();
+        if (bertRuntime != null && bertRuntime.characterData != null) bertRuntime.characterData.LoadSkills(allSkills);
+        if (lieRuntime != null && lieRuntime.characterData != null) lieRuntime.characterData.LoadSkills(allSkills);
+        if (johanRuntime != null && johanRuntime.characterData != null) johanRuntime.characterData.LoadSkills(allSkills);
+
         // reset players (use scene instances assigned in inspector)
         bertRuntime.InitFromSO(bertRuntime.characterData);
         lieRuntime.InitFromSO(lieRuntime.characterData);
@@ -262,9 +268,10 @@ public class CombatManager : MonoBehaviour
                         break;
 
                     case SkillType.DefenseBuff:
-                        bertRuntime.isDefending = bertRuntime.IsAlive();
-                        lieRuntime.isDefending = lieRuntime.IsAlive();
-                        johanRuntime.isDefending = johanRuntime.IsAlive();
+                        // gunakan helper ApplyDefenseBuff sehingga defense buff berlaku benar ke runtime instances
+                        bertRuntime.ApplyDefenseBuff();
+                        lieRuntime.ApplyDefenseBuff();
+                        johanRuntime.ApplyDefenseBuff();
                         if (uiManager != null) uiManager.ShowInfo($"{user} uses {skill.skillName}! defense for everyone!");
                         Debug.Log($"{user} skill defense buff active");
                         break;

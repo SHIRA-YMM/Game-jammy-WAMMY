@@ -27,6 +27,12 @@ public class SkillShopManager : MonoBehaviour
 
     void Start()
     {
+        // load saved skills from PlayerPrefs into CharacterSO assets so runtime scenes read them
+        var allSkills = Resources.FindObjectsOfTypeAll<SkillSO>();
+        if (johan != null) johan.LoadSkills(allSkills);
+        if (lie != null) lie.LoadSkills(allSkills);
+        if (bert != null) bert.LoadSkills(allSkills);
+
         SetupShop();
         UpdateCoinUI();
     }

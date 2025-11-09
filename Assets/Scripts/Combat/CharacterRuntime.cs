@@ -6,6 +6,10 @@ public class CharacterRuntime : MonoBehaviour
     public CharacterSO characterData;
     [HideInInspector] public int currentHP;
     [HideInInspector] public bool isDefending = false;
+
+    // new: defense buff that blocks the next incoming hit (used by DefenseBuff skill)
+    [HideInInspector] public bool defenseBuffActive = false;
+
     public Slider hpSlider;
     // NOTE: remove any hpText reference in inspector/prefab if exists
     // public TextMeshProUGUI hpText; // removed
@@ -57,6 +61,10 @@ public class CharacterRuntime : MonoBehaviour
     {
         if (skillUsed == null) return;
         for (int i = 0; i < skillUsed.Length; i++) skillUsed[i] = false;
+
+        // reset defend flags
+        isDefending = false;
+        defenseBuffActive = false;
     }
 
     public bool IsSkillAvailable(int index)
@@ -76,10 +84,13 @@ public class CharacterRuntime : MonoBehaviour
 
     public void TakeDamage(int dmg)
     {
-        if (isDefending)
+        // if either player pressed Defend (isDefending) OR got DefenseBuff (defenseBuffActive),
+        // block the incoming damage once and clear the flag.
+        if (isDefending || defenseBuffActive)
         {
             dmg = 0;
             isDefending = false;
+            defenseBuffActive = false;
         }
 
         currentHP -= dmg;
@@ -95,6 +106,7 @@ public class CharacterRuntime : MonoBehaviour
         UpdateHPUI();
         ResetSkills();
         isDefending = false;
+        defenseBuffActive = false;
     }
 
     public void UpdateHPUI()
@@ -119,5 +131,12 @@ public class CharacterRuntime : MonoBehaviour
         {
             portraitImage.color = dim ? new Color(0.5f, 0.5f, 0.5f, 1f) : Color.white;
         }
+    }
+
+    // new helper to apply defense buff (used by skill)
+    public void ApplyDefenseBuff()
+    {
+        if (IsAlive())
+            defenseBuffActive = true;
     }
 }

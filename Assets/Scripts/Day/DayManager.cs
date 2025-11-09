@@ -79,11 +79,7 @@ public class DayManager : MonoBehaviour
 
     IEnumerator fadein()
     {
-        if (blackBG == null || dayanimText == null || fadeinBG == null)
-        {
-            Debug.LogError("Missing UI references in DayManager!");
-            yield break;
-        }
+        
 
         // 1️⃣ Show blackBG first
         blackBG.SetActive(true);
