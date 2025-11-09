@@ -1509,7 +1509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: About our project
+  m_text: I can finally get back on discord 24/7...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b6b6386ccc239d4ca221acfc792fdf4, type: 2}
   m_sharedMaterial: {fileID: -6463825260307663201, guid: 0b6b6386ccc239d4ca221acfc792fdf4, type: 2}
@@ -1548,7 +1548,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 39.05
+  m_lineSpacing: 70
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -5520,7 +5520,7 @@ Transform:
   m_GameObject: {fileID: 1946819140}
   serializedVersion: 2
   m_LocalRotation: {x: 0.025169717, y: 0, z: 0, w: 0.9996832}
-  m_LocalPosition: {x: 2.432363, y: 0.5139923, z: -9.921788}
+  m_LocalPosition: {x: 1.153172, y: 0.51469064, z: -9.921753}
   m_LocalScale: {x: 0.87, y: 1.0540423, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5687,11 +5687,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
       propertyPath: m_text
-      value: About our project....
+      value: So close to finishing!
       objectReference: {fileID: 0}
     - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
       propertyPath: m_lineSpacing
-      value: 49.12
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 3113648237667054124, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
       propertyPath: m_LocalPosition.x

@@ -1509,7 +1509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: About our project
+  m_text: Why's he here early?!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b6b6386ccc239d4ca221acfc792fdf4, type: 2}
   m_sharedMaterial: {fileID: -6463825260307663201, guid: 0b6b6386ccc239d4ca221acfc792fdf4, type: 2}
@@ -1548,7 +1548,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 39.05
+  m_lineSpacing: 70
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -5687,11 +5687,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
       propertyPath: m_text
-      value: About our project....
+      value: Oh...it's his class...
       objectReference: {fileID: 0}
     - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
       propertyPath: m_lineSpacing
-      value: 49.12
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 3113648237667054124, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
       propertyPath: m_LocalPosition.x

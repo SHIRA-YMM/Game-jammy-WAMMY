@@ -811,6 +811,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
+      propertyPath: m_text
+      value: Where's Johan?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
+      propertyPath: m_lineSpacing
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 3113648237667054124, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.62
@@ -5068,6 +5076,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: dd0c744c81bff364dbafa71767067783, type: 2}
+    - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
+      propertyPath: m_text
+      value: This place feels...lively?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874908392007618022, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
+      propertyPath: m_lineSpacing
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 3113648237667054124, guid: c7e460dde65f36945bcd0fb5a961f0e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.42
