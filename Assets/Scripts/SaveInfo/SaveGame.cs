@@ -4,20 +4,27 @@ using System.Collections;
 public class SaveGame : MonoBehaviour
 {
     public GameObject textNotif;
-    public bool hasSaved = false;  // Track if save point has been used
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !hasSaved)
+        if (!other.CompareTag("Player")) return;
+        
+        int lastSavedDay = PlayerPrefs.GetInt("LastSavedDay", 0);
+        int currentDay = GameProgressManager.Instance.GetCurrentDay();
+        
+        if (lastSavedDay != currentDay)
         {
-            // Panggil fungsi penyimpanan game di sini
+            // Save current progress
+            PlayerPrefs.SetInt("LastSavedDay", currentDay);
             StartCoroutine(ShowNotification());
-            hasSaved = true;  // Mark as used
-            
-            // Optional: Disable the collider after saving
             GetComponent<Collider2D>().enabled = false;
             
-            Debug.Log("Game Saved!");
+            // Save other game data here
+            if (GlobalCoinManager.Instance != null)
+                GlobalCoinManager.Instance.SaveCoins();
+                
+            PlayerPrefs.Save();
+            Debug.Log($"Game Saved for Day {currentDay}!");
         }
     }
     
@@ -26,12 +33,5 @@ public class SaveGame : MonoBehaviour
         textNotif.SetActive(true);
         yield return new WaitForSeconds(2f); // Tampilkan selama 2 detik
         textNotif.SetActive(false);
-    }
-
-    // Optional: Reset save point functionality
-    public void ResetSavePoint()
-    {
-        hasSaved = false;
-        GetComponent<Collider2D>().enabled = true;
     }
 }

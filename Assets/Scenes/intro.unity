@@ -645,6 +645,34 @@ PrefabInstance:
       propertyPath: 'dialogues.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: fea52db28af00374490b0d0de1ca1aea, type: 2}
+    - target: {fileID: 9201235486417993650, guid: de6ec0769d47e904db4e5cae62ae22e5, type: 3}
+      propertyPath: OnIntroDialogueComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201235486417993650, guid: de6ec0769d47e904db4e5cae62ae22e5, type: 3}
+      propertyPath: OnIntroDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201235486417993650, guid: de6ec0769d47e904db4e5cae62ae22e5, type: 3}
+      propertyPath: OnIntroDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1410588608}
+    - target: {fileID: 9201235486417993650, guid: de6ec0769d47e904db4e5cae62ae22e5, type: 3}
+      propertyPath: OnIntroDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201235486417993650, guid: de6ec0769d47e904db4e5cae62ae22e5, type: 3}
+      propertyPath: OnIntroDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnIntroComplete
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201235486417993650, guid: de6ec0769d47e904db4e5cae62ae22e5, type: 3}
+      propertyPath: OnIntroDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201235486417993650, guid: de6ec0769d47e904db4e5cae62ae22e5, type: 3}
+      propertyPath: OnIntroDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -26,6 +26,9 @@ public class CombatManager : MonoBehaviour
     [Header("References")]
     public UIManager uiManager;
 
+    [Header("Victory UI")]
+    public GameObject victoryPanel; // Assign di inspector
+
     // internal
     private List<CharacterSO> shuffledEnemies;
     private List<CharacterRuntime> turnOrder = new List<CharacterRuntime>();
@@ -137,8 +140,9 @@ public class CombatManager : MonoBehaviour
 
             if (!enemyRuntime.IsAlive())
             {
-                if (uiManager != null) uiManager.SetTurnText("YOU WIN!");
-                Debug.Log("Menang untuk day " + currentDay);
+                if (uiManager != null)
+                    uiManager.ShowInfo("Enemy Defeated!");
+                ShowVictoryPanel(); // Tambahkan ini
                 yield break;
             }
 
@@ -410,5 +414,36 @@ public class CombatManager : MonoBehaviour
                     return r;
         }
         return null;
+    }
+
+    private void ShowVictoryPanel()
+    {
+        if (victoryPanel != null)
+        {
+            victoryPanel.SetActive(true);
+        }
+        
+        // Disable combat controls
+        if (uiManager != null)
+        {
+            uiManager.SetActionButtonsEnabled(false, false);
+        }
+    }
+
+    // Dipanggil dari button "Lanjut" di victory panel
+    public void OnVictoryContinuePressed()
+    {
+        if (GameProgressManager.Instance != null)
+        {
+            GameProgressManager.Instance.OnCombatComplete(); // Ini akan me-load day berikutnya
+        }
+    }
+
+    private void OnCombatVictory()
+    {
+        if (GameProgressManager.Instance != null)
+        {
+            GameProgressManager.Instance.OnCombatComplete();
+        }
     }
 }

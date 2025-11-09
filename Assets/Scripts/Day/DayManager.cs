@@ -225,4 +225,22 @@ public class DayManager : MonoBehaviour
     }
 
     #endregion
+
+    // Di DayManager, panggil saat akan pindah ke malam
+    public void OnDayComplete()
+    {
+        if (GameProgressManager.Instance != null)
+        {
+            GameProgressManager.Instance.GoToNextPhase(); // Akan load scene Night
+        }
+    }
+
+    // Di akhir dialog intro
+    public void OnIntroComplete()
+    {
+        if (GameProgressManager.Instance != null)
+        {
+            GameProgressManager.Instance.GoToNextPhase(); // Akan load Day1
+        }
+    }
 }

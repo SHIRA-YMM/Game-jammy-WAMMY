@@ -48,5 +48,5 @@ MonoBehaviour:
     characterName: Johan
     portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
   loadSceneOnEnd: 1
-  sceneToLoad: day1
+  sceneToLoad: Day1
   delayBeforeLoad: 0
