@@ -15,33 +15,33 @@ MonoBehaviour:
   lines:
   - text: Are you guys stupid, lazy or both?!
     characterName: Teacher
-    portrait: {fileID: 7090593900915413366, guid: 50b5ccaa62d3a43499dd88912a1f6731, type: 3}
+    portrait: {fileID: -1870537655861810229, guid: c5e6254220483e54f96eb85b9005326e, type: 3}
   - text: "It's been three weeks and you\u2019ve all missed your assignments!"
     characterName: Teacher
-    portrait: {fileID: 7090593900915413366, guid: 50b5ccaa62d3a43499dd88912a1f6731, type: 3}
+    portrait: {fileID: -1870537655861810229, guid: c5e6254220483e54f96eb85b9005326e, type: 3}
   - text: What am I gonna put on your report card?!
     characterName: Teacher
-    portrait: {fileID: 7090593900915413366, guid: 50b5ccaa62d3a43499dd88912a1f6731, type: 3}
+    portrait: {fileID: -1870537655861810229, guid: c5e6254220483e54f96eb85b9005326e, type: 3}
   - text: "Sorry sir\u2014"
     characterName: Student
     portrait: {fileID: 0}
   - text: it's always sorry this! Sorry that!
     characterName: Teacher
-    portrait: {fileID: 7090593900915413366, guid: 50b5ccaa62d3a43499dd88912a1f6731, type: 3}
+    portrait: {fileID: -1870537655861810229, guid: c5e6254220483e54f96eb85b9005326e, type: 3}
   - text: No, That's it! Get in groups of three, we're making a new project! Maybe
       this time you'll actually finish it!
     characterName: Teacher
-    portrait: {fileID: 7090593900915413366, guid: 50b5ccaa62d3a43499dd88912a1f6731, type: 3}
+    portrait: {fileID: -1870537655861810229, guid: c5e6254220483e54f96eb85b9005326e, type: 3}
   - text: "'Wait, what?! Why is everyone already in groups? The last two people available
       are\u2026'"
     characterName: Johan
     portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
   - text: '''THESE BUMS?!!!!'''
-    characterName: Bert
+    characterName: Johan
     portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
   - text: '''That girl''s Lie, I think? I don''t know her that well, she''s always
       in her own world'''
-    characterName: Lie
+    characterName: Johan
     portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
   - text: "'That guy's Bert, he's\u2026 weird. Comes off as weird a lot of the time
       but means well\u2026 I hope'"
