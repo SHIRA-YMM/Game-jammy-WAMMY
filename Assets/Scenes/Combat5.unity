@@ -765,7 +765,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7e7d0ebbc2775cb48b7f2d0a076ccabc, type: 2}
   - {fileID: 11400000, guid: 2c67caf26dc2e764a82c4374925598bb, type: 2}
   - {fileID: 11400000, guid: 12bb05aeae9492841979e2173b0460d1, type: 2}
-  enemyRuntimePrefab: {fileID: 3261525278421554051}
+  enemyRuntimePrefab: {fileID: 471662533}
   totalDays: 5
   currentDay: 5
   normalEnemyHP: 100
@@ -920,6 +920,8 @@ GameObject:
   - component: {fileID: 471662531}
   - component: {fileID: 471662530}
   - component: {fileID: 471662529}
+  - component: {fileID: 471662533}
+  - component: {fileID: 471662532}
   m_Layer: 5
   m_Name: Mr Nikev
   m_TagString: Untagged
@@ -1006,6 +1008,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471662527}
   m_CullTransparentMesh: 1
+--- !u!225 &471662532
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471662527}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &471662533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471662527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82750251594f7474bbe2fcb402bb7cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterRuntime
+  characterData: {fileID: 11400000, guid: 12bb05aeae9492841979e2173b0460d1, type: 2}
+  currentHP: 0
+  isDefending: 0
+  hpSlider: {fileID: 5690244774674709154}
+  rootCanvasGroup: {fileID: 353650714513053494}
+  portraitImage: {fileID: 8690486769869826781}
 --- !u!1 &535931856
 GameObject:
   m_ObjectHideFlags: 0
