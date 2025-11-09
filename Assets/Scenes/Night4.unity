@@ -1493,7 +1493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &622339500
 Transform:
   m_ObjectHideFlags: 0
@@ -3372,7 +3372,7 @@ GameObject:
   - component: {fileID: 1322334247}
   - component: {fileID: 1322334246}
   m_Layer: 5
-  m_Name: StartDialogLie
+  m_Name: StartCombat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3441,10 +3441,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: StartDialogueByIndex
-        m_Mode: 3
+      - m_Target: {fileID: 1670222568}
+        m_TargetAssemblyTypeName: DayManager, Assembly-CSharp
+        m_MethodName: OnDayComplete
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4559,7 +4559,6 @@ GameObject:
   - component: {fileID: 1670222570}
   - component: {fileID: 1670222569}
   - component: {fileID: 1670222568}
-  - component: {fileID: 1670222567}
   - component: {fileID: 1670222566}
   m_Layer: 0
   m_Name: GameManager
@@ -4602,19 +4601,6 @@ MonoBehaviour:
   coinText: {fileID: 1392905943}
   infoText: {fileID: 1786381177}
   messageDuration: 2
---- !u!114 &1670222567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670222565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcea142de55f0fe449e6c9b44951b2c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GlobalCoinManager
-  coins: 0
 --- !u!114 &1670222568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4651,7 +4637,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   currentDay: 1
-  isMorning: 1
+  isMorning: 0
 --- !u!114 &1670222569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4680,6 +4666,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnBeforeSceneLoad:
+    m_PersistentCalls:
+      m_Calls: []
+  OnIntroDialogueComplete:
     m_PersistentCalls:
       m_Calls: []
 --- !u!4 &1670222570
@@ -5768,7 +5757,7 @@ Transform:
   m_GameObject: {fileID: 1946819140}
   serializedVersion: 2
   m_LocalRotation: {x: 0.025169717, y: 0, z: 0, w: 0.9996832}
-  m_LocalPosition: {x: 0.42586517, y: 0.5150895, z: -9.921733}
+  m_LocalPosition: {x: 2.432363, y: 0.5139923, z: -9.921788}
   m_LocalScale: {x: 0.87, y: 1.0540423, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6299,6 +6288,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4600586212467706107, guid: 681d28f9e554f9d41a8b31676cc74853, type: 3}
+      propertyPath: ButtonDialog
+      value: 
+      objectReference: {fileID: 1322334244}
+    - target: {fileID: 4600586212467706107, guid: 681d28f9e554f9d41a8b31676cc74853, type: 3}
+      propertyPath: interactionUI
+      value: 
+      objectReference: {fileID: 2024817067489199243}
     - target: {fileID: 5564789318908589215, guid: 681d28f9e554f9d41a8b31676cc74853, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.89
@@ -6339,6 +6336,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6984466554660625240, guid: 681d28f9e554f9d41a8b31676cc74853, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7634018563491877714, guid: 681d28f9e554f9d41a8b31676cc74853, type: 3}
       propertyPath: m_Camera
       value: 
@@ -6347,11 +6348,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 7881903523198194053, guid: 681d28f9e554f9d41a8b31676cc74853, type: 3}
+      propertyPath: m_text
+      value: Enemy1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 681d28f9e554f9d41a8b31676cc74853, type: 3}
+--- !u!1 &2024817067489199243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6984466554660625240, guid: 681d28f9e554f9d41a8b31676cc74853, type: 3}
+  m_PrefabInstance: {fileID: 2024817067489199242}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6703602662472824257
 PrefabInstance:
   m_ObjectHideFlags: 0

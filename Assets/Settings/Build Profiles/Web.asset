@@ -37,25 +37,17 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/Day2.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/Night2.unity
-  - m_enabled: 1
     m_path: Assets/Scenes/Combat2.unity
   - m_enabled: 1
     m_path: Assets/Scenes/Day3.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/Night3.unity
   - m_enabled: 1
     m_path: Assets/Scenes/Combat3.unity
   - m_enabled: 1
     m_path: Assets/Scenes/Day4.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/Night4.unity
-  - m_enabled: 1
     m_path: Assets/Scenes/Combat4.unity
   - m_enabled: 1
     m_path: Assets/Scenes/Day5.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/Night5.unity
   - m_enabled: 1
     m_path: Assets/Scenes/Combat5.unity
   - m_enabled: 1

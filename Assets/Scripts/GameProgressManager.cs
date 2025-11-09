@@ -35,8 +35,15 @@ public class GameProgressManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        Debug.Log("GameProgressManager starting...");
+        StartGame();
+    }
+
     public void StartGame()
     {
+        Debug.Log("Loading intro scene...");
         currentDay = 1;
         isDaytime = true;
         SaveProgress();
@@ -88,5 +95,59 @@ public class GameProgressManager : MonoBehaviour
     {
         currentDay = PlayerPrefs.GetInt("CurrentDay", 1);
         isDaytime = PlayerPrefs.GetInt("IsDaytime", 1) == 1;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log($"Scene loaded: {scene.name}");
+
+        if (scene.name.StartsWith("Day"))
+        {
+            // cari DayManager pada root objects dari scene yang baru dimuat
+            var roots = scene.GetRootGameObjects();
+            DayManager dayManager = null;
+            foreach (var root in roots)
+            {
+                // cek root langsung
+                dayManager = root.GetComponent<DayManager>();
+                if (dayManager != null) break;
+
+                // cek children jika perlu
+                dayManager = root.GetComponentInChildren<DayManager>(true);
+                if (dayManager != null) break;
+            }
+
+            if (dayManager != null)
+            {
+                Debug.Log("Found DayManager in loaded scene root objects");
+                // cek references secara defensif
+                if (dayManager.backgroundObject != null &&
+                    dayManager.blackBG != null &&
+                    dayManager.dayanimText != null &&
+                    dayManager.fadeinBG != null)
+                {
+                    dayManager.SetDay(currentDay);
+                    dayManager.StartMorning();
+                }
+                else
+                {
+                    Debug.LogError("DayManager references not properly set in scene! (inspector values missing at runtime)");
+                }
+            }
+            else
+            {
+                Debug.LogError("DayManager not found in loaded Day scene (check GameManager name/placement).");
+            }
+        }
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
