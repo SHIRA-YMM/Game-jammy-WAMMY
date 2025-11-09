@@ -26,6 +26,9 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent OnDialogueEnd;
     public UnityEvent OnBeforeSceneLoad; // dipanggil tepat sebelum memulai load (opsional)
 
+    [Header("Custom Events")]
+    public UnityEvent OnIntroDialogueComplete;
+
     // Internal variables
     private DialogueData currentDialogue;
     private int currentLineIndex = -1;
@@ -147,6 +150,7 @@ public class DialogueManager : MonoBehaviour
         if (dialoguePanel != null)
             dialoguePanel.SetActive(false);
         OnDialogueEnd?.Invoke();
+        OnIntroDialogueComplete?.Invoke(); // Tambahkan ini
 
         // Jika DialogueData meminta load scene, jalankan coroutine untuk itu
         if (dialogueToCheck != null && dialogueToCheck.loadSceneOnEnd && !string.IsNullOrEmpty(dialogueToCheck.sceneToLoad))
@@ -193,4 +197,16 @@ public class DialogueManager : MonoBehaviour
             StopCoroutine(typingCoroutine);
         EndDialogue();
     }
+
+    // Di akhir dialog intro
+    public void OnIntroComplete()
+    {
+        if (GameProgressManager.Instance != null)
+        {
+            GameProgressManager.Instance.GoToNextPhase(); // Akan load Day1
+        }
+    }
+
+    // Di akhir dialog intro
+    
 }

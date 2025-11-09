@@ -392,6 +392,7 @@ MonoBehaviour:
   animator: {fileID: 1718866877976649620}
   spriteRenderer: {fileID: 7838472700306643415}
   interactionUI: {fileID: 8564460926321661445}
+  ButtonDialog: {fileID: 0}
 --- !u!1 &8564460926321661445
 GameObject:
   m_ObjectHideFlags: 0

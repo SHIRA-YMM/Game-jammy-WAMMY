@@ -153,7 +153,7 @@ public class NPCBehavior : MonoBehaviour
            
             ButtonDialog.SetActive(true);
 
-            ButtonDialog.SetActive(true);
+            //ButtonDialog.SetActive(true);
         }
     }
 
@@ -177,7 +177,7 @@ public class NPCBehavior : MonoBehaviour
             if (interactionUI != null)
                 interactionUI.SetActive(false);
 
-                    ButtonDialog.SetActive(false);
+                    //ButtonDialog.SetActive(false);
 
             ButtonDialog.SetActive(false);
 

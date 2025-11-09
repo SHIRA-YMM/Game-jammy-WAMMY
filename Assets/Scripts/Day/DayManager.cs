@@ -73,30 +73,33 @@ public class DayManager : MonoBehaviour
 
     void Start()
     {
-        // default start: pagi
-        StartMorning();
+        // Remove automatic StartMorning call
+        // Let GameProgressManager handle it
     }
 
     IEnumerator fadein()
     {
-        // 1️⃣ Tampilkan fadeinBG lebih dulu
+        if (blackBG == null || dayanimText == null || fadeinBG == null)
+        {
+            Debug.LogError("Missing UI references in DayManager!");
+            yield break;
+        }
+
+        // 1️⃣ Show blackBG first
         blackBG.SetActive(true);
         dayanimText.SetActive(true);
-        //dayanimText.SetActive(false);
 
-        // tunggu 2 detik
         yield return new WaitForSeconds(2f);
 
-        // 2️⃣ Setelah 2 detik, tampilkan teks
-        blackBG.SetActive(false);
-        fadeinBG.SetActive(true);
+        // 2️⃣ After 2 seconds, show text
+        if (blackBG != null) blackBG.SetActive(false);
+        if (fadeinBG != null) fadeinBG.SetActive(true);
 
-        // tunggu lagi 2 detik
         yield return new WaitForSeconds(3f);
 
-        // 3️⃣ Setelah total 4 detik, sembunyikan semua
-        fadeinBG.SetActive(false);
-        dayanimText.SetActive(false);
+        // 3️⃣ After total 5 seconds, hide everything
+        if (fadeinBG != null) fadeinBG.SetActive(false);
+        if (dayanimText != null) dayanimText.SetActive(false);
     }
 
 
@@ -107,6 +110,14 @@ public class DayManager : MonoBehaviour
     /// </summary>
     public void StartMorning()
     {
+        Debug.Log("StartMorning called on DayManager");
+        
+        if (!ValidateReferences())
+        {
+            Debug.LogError("Cannot start morning - missing references! Please check DayManager inspector.");
+            return;
+        }
+        
         StartCoroutine(fadein());
         isMorning = true;
         ApplyMorningBackground();
@@ -224,5 +235,50 @@ public class DayManager : MonoBehaviour
         dayText.text = $"Day {currentDay} ({mode})";
     }
 
+    private bool ValidateReferences()
+    {
+        bool isValid = true;
+        
+        if (backgroundObject == null) {
+            Debug.LogError("Missing backgroundObject reference!");
+            isValid = false;
+        }
+        
+        if (blackBG == null) {
+            Debug.LogError("Missing blackBG reference!");
+            isValid = false;
+        }
+        
+        if (dayanimText == null) {
+            Debug.LogError("Missing dayanimText reference!");
+            isValid = false;
+        }
+        
+        if (fadeinBG == null) {
+            Debug.LogError("Missing fadeinBG reference!");
+            isValid = false;
+        }
+
+        return isValid;
+    }
+
     #endregion
+
+    // Di DayManager, panggil saat akan pindah ke malam
+    public void OnDayComplete()
+    {
+        if (GameProgressManager.Instance != null)
+        {
+            GameProgressManager.Instance.GoToNextPhase(); // Akan load scene Night
+        }
+    }
+
+    // Di akhir dialog intro
+    public void OnIntroComplete()
+    {
+        if (GameProgressManager.Instance != null)
+        {
+            GameProgressManager.Instance.GoToNextPhase(); // Akan load Day1
+        }
+    }
 }

@@ -59,7 +59,7 @@ MonoBehaviour:
   - text: "Dude\u2026not cool..."
     characterName: Bert
     portrait: {fileID: 6623817764783677434, guid: 270d09e1b6bc05846a3584c6f560b4a3, type: 3}
-  - text: Wait, Johan, behind you!
+  - text: Wait, WHAT IS THAT?!
     characterName: Lie
     portrait: {fileID: 4758470530808116106, guid: 70aa89e569db92845815b76a6983ae14, type: 3}
   - text: AHHH!! WHAT IS THAT THING?!!!

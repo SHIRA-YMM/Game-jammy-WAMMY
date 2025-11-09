@@ -72,13 +72,18 @@ public class MiniManager : MonoBehaviour
         {
             finished = true;
             Debug.Log("Semua item terpasang! YOU WIN (debug).");
-            // Show win panel
             if (winPanel != null)
                 winPanel.SetActive(true);
-        }
 
-        
+            // ✅ Tambahkan koin ke global
+            if (GlobalCoinManager.Instance != null)
+            {
+                GlobalCoinManager.Instance.AddCoins(20);
+                Debug.Log("Player mendapatkan 20 koin!");
+            }
+        }
     }
+
 
     public void RestartGame()
     {
