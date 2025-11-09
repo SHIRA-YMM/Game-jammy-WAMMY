@@ -753,7 +753,7 @@ MonoBehaviour:
   useTypewriter: 1
   typeSpeed: 0.03
   dialogues:
-  - {fileID: 11400000, guid: fea52db28af00374490b0d0de1ca1aea, type: 2}
+  - {fileID: 11400000, guid: e16463e64f113ff44be4a7cf8f90feea, type: 2}
   OnDialogueStart:
     m_PersistentCalls:
       m_Calls: []

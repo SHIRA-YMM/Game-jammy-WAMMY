@@ -165,6 +165,6 @@ MonoBehaviour:
   - text: And somehow, I'm glad I ended up with these two bums.
     characterName: Johan
     portrait: {fileID: 4707155232029593515, guid: ee08761413d15334d8f80b5c710abed6, type: 3}
-  loadSceneOnEnd: 0
-  sceneToLoad: 
+  loadSceneOnEnd: 1
+  sceneToLoad: mainmenu
   delayBeforeLoad: 0
