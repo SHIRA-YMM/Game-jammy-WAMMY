@@ -16,16 +16,16 @@ MonoBehaviour:
   - text: "Hey, guys?\u2014"
     characterName: Johan
     portrait: {fileID: 7982841969013634065, guid: 9fce4fb2193f2854eb973eb7c790e041, type: 3}
-  - text: "Another door! Aha! Maybe there is some cute anime waifus behind here!\u2014"
+  - text: EVEN MORE MONSTERS?! THIS IS JUST LIKE AN RPG GAME!
     characterName: Bert
     portrait: {fileID: 8657541099234339137, guid: 03cdde1b1bc75c7498a34d197ed3152b, type: 3}
-  - text: I'm literally gonna push you in.
+  - text: Maybe we should just feed you sleeping pills.
     characterName: Lie
     portrait: {fileID: -7731782699828624873, guid: 6158f18d79e187642a73721347d5ff1b, type: 3}
   - text: Woah-Woah, calm down, what's up?
     characterName: Johan
     portrait: {fileID: 5443298734127267632, guid: 4187a938d3595e84383098db03bd0f6e, type: 3}
-  - text: The next room opened, come on!
+  - text: There's more of em! Come on!
     characterName: Lie
     portrait: {fileID: 888118350300490760, guid: 97e8c0f3e90ef894da63d55a4e853544, type: 3}
   loadSceneOnEnd: 0
