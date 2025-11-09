@@ -69,7 +69,7 @@ public class SkillShopManager : MonoBehaviour
             if (i < priceTexts.Length && priceTexts[i] != null)
                 priceTexts[i].text = $"{skill.price} Coins";
 
-            // set button interactable based on ownership
+            // set button interactable based on ownership for the target character
             bool owned = IsSkillOwned(skill);
             skillButtons[i].interactable = !owned;
 
@@ -83,12 +83,25 @@ public class SkillShopManager : MonoBehaviour
         }
     }
 
+    // helper baru: tentukan karakter target berdasarkan tipe skill
+    CharacterSO GetTargetCharacterForSkill(SkillSO skill)
+    {
+        if (skill == null) return null;
+        switch (skill.skillType)
+        {
+            case SkillType.Attack: return johan;
+            case SkillType.Heal: return lie;
+            case SkillType.DefenseBuff: return bert;
+            default: return johan;
+        }
+    }
+
     bool IsSkillOwned(SkillSO skill)
     {
-        if (johan == null || skill == null) return false;
-        if (johan.skills == null) return false;
-        // compare by reference (ScriptableObject)
-        foreach (var s in johan.skills)
+        if (skill == null) return false;
+        var target = GetTargetCharacterForSkill(skill);
+        if (target == null || target.skills == null) return false;
+        foreach (var s in target.skills)
         {
             if (s == skill) return true;
         }
@@ -109,7 +122,14 @@ public class SkillShopManager : MonoBehaviour
             return;
         }
 
-        // jika sudah dimiliki (cek sebelum pengeluaran)
+        var target = GetTargetCharacterForSkill(skill);
+        if (target == null)
+        {
+            ShowInfo("Tidak ada karakter target untuk skill ini.");
+            return;
+        }
+
+        // jika sudah dimiliki (cek pada karakter target)
         if (IsSkillOwned(skill))
         {
             ShowInfo("Sudah dibeli.");
@@ -119,17 +139,14 @@ public class SkillShopManager : MonoBehaviour
         // coba pengeluaran koin
         if (GlobalCoinManager.Instance.SpendCoins(skill.price))
         {
-            // sukses beli
-            // tambahkan ke semua karakter
-            johan?.AddSkill(skill);
-            lie?.AddSkill(skill);
-            bert?.AddSkill(skill);
+            // sukses beli -> tambahkan hanya ke karakter target
+            target.AddSkill(skill); // AddSkill memanggil SaveSkills()
 
             // update UI
             UpdateCoinUI();
             SetupShop(); // untuk men-disable tombol dan ubah teks jadi "Owned"
 
-            ShowInfo($"Berhasil membeli {skill.skillName}.");
+            ShowInfo($"Berhasil membeli {skill.skillName} untuk {target.characterName}.");
         }
         else
         {
